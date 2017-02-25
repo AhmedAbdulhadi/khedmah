@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.bassam.khedmaapp.SplashScreenActivity">
+
+    <ImageView
+        android:background="@drawable/five"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/khedmaImageViewInSplash"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+
+        android:background="@drawable/txtkhedm"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/khedmaImageViewInSplash"
+        android:layout_alignStart="@+id/khedmaImageViewInSplash"
+        android:id="@+id/txtkhedmaImageViewInSplash" />
+
+
+</RelativeLayout>

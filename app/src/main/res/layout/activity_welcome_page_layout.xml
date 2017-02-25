@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    android:padding="16dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomePageActivity">
+
+    <ImageView
+        android:background="@drawable/khedma"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+    <com.example.bassam.khedmaapp.views.MyButton
+        android:layout_marginTop="60dp"
+        android:id="@+id/userButtonWelcomePage"
+        android:text="بوابة المستخدمين"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/graybutton"
+
+        />
+    <com.example.bassam.khedmaapp.views.MyButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/supplaierButtonWelcomePage"
+        android:text="بوابة المزودين"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/graybutton"
+
+        />
+
+</LinearLayout>

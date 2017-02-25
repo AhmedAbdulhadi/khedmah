@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:elevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.example.bassam.khedmaapp.views.MytoolbarTextView
+            android:id="@+id/orderRateStateOldOrderActivity"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="0.3"
+            android:text="تم التقييم"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <com.example.bassam.khedmaapp.views.MyTextView
+            android:id="@+id/orderTextOldOrderActivity"
+            android:gravity="right|center"
+            android:textSize="20dp"
+            android:layout_weight="0.3"
+            android:text="خدمة الكهرباء"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <com.example.bassam.khedmaapp.views.MyTextView
+
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="0.1"
+            android:text="-"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textStyle="bold"/>
+        <com.example.bassam.khedmaapp.views.MyTextView
+
+            android:id="@+id/orderIdOldOrderActivity"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_weight="0.2"
+            android:text="9999"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="#3E3F40"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+</LinearLayout>

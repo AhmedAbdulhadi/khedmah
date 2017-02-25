@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rate_old_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bassam.khedmaapp.user.activitys.RateOldOrderActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/back_toolbar_layout" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="16dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="الرقم المرجعي"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:id="@+id/orderIdRateOldOrderActivity"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="999999999"
+                android:gravity="center|right"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextview"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text=" اسم مزود الخدمة"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:id="@+id/orderSupplierNameRateOldOrderActivity"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="بسام"
+                android:gravity="center|right"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextview"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="التقييم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.bassam.khedmaapp.views.MyEditText
+                android:inputType="textLongMessage"
+                android:id="@+id/orderRateTextRateOldOrderActivity"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittextview"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="التقييم"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                style="@style/MyRateBarTheme"
+                app:theme="@style/MyRateBarTheme"
+                android:id="@+id/OrderRateInRateOldOrderActivity"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <com.example.bassam.khedmaapp.views.MyButton
+                android:layout_marginTop="25dp"
+                android:id="@+id/doneButtonRateOldOrderActivity"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="اعتمد"
+                android:background="@drawable/graybutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

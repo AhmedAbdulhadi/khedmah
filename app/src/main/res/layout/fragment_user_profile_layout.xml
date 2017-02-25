@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.bassam.khedmaapp.views.MyTextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/supplierNameTextViewInSupplierProfileInUserActivity"
+            android:gravity="center"
+            android:textSize="35dp"
+            android:text="اسم الحرفي"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+
+        <com.example.bassam.khedmaapp.views.MyTextView
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="مزود جديد"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+        <com.example.bassam.khedmaapp.views.MyTextView
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="مزود جديد"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+        <com.example.bassam.khedmaapp.views.MyTextView
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_login_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".user.activitys.UserLoginPageActivity">
+
+
+    <ImageView
+        android:background="@drawable/khedma"
+        android:layout_width="180dp"
+        android:layout_height="180dp" />
+
+    <com.example.bassam.khedmaapp.views.MyTextView
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"
+        android:text="رمز التأكيد"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.example.bassam.khedmaapp.views.MyEditText
+        android:maxLength="1"
+        android:layout_margin="5dp"
+        android:layout_weight="0.25"
+        android:background="@drawable/edittextview"
+        android:gravity="center"
+        android:id="@+id/FourthNumberEditTextVerificationActivity"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:inputType="number"
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+        <com.example.bassam.khedmaapp.views.MyEditText
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/edittextview"
+            android:gravity="center"
+            android:id="@+id/thirdNumberEditTextVerificationActivity"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <com.example.bassam.khedmaapp.views.MyEditText
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/edittextview"
+            android:gravity="center"
+            android:id="@+id/secondNumberEditTextVerificationActivity"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <com.example.bassam.khedmaapp.views.MyEditText
+            android:maxLength="1"
+            android:layout_margin="5dp"
+            android:layout_weight="0.25"
+            android:background="@drawable/edittextview"
+            android:gravity="center"
+            android:id="@+id/firstNumberEditTextVerificationActivity"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:inputType="numberSigned"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <com.example.bassam.khedmaapp.views.MyButton
+        android:layout_marginTop="60dp"
+        android:id="@+id/loginButtonVerificationActivity"
+        android:text="متابعة"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/graybutton"
+
+        />
+    <com.example.bassam.khedmaapp.views.MyButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/reSendButtonVerificationActivity"
+        android:text=" اعادة ارسال الرمز"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/graybutton"
+
+        />
+</LinearLayout>

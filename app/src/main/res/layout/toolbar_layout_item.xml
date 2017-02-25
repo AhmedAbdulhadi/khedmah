@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    android:elevation="16dp">
+    <com.example.bassam.khedmaapp.views.MytoolbarTextView
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/toolbarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageButton
+        android:background="@color/colorPrimary"
+        android:layout_gravity="right"
+        android:onClick="onClick"
+        android:id="@+id/drowerImageIcon"
+        android:src="@drawable/ic_drower"
+        android:layout_width="50dp"
+        android:layout_height="match_parent" />
+
+</android.support.v7.widget.Toolbar>

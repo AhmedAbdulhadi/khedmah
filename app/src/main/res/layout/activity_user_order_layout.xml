@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_user_order_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    tools:context="com.example.bassam.khedmaapp.user.activitys.UserOrderActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/back_toolbar"
+        layout="@layout/back_toolbar_layout"/>
+</LinearLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.bassam.khedmaapp.views.MyButton
+            android:textSize="20dp"
+            android:text="حدد موعد"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/graybutton"
+            android:layout_weight="0.50"
+            android:id="@+id/appointmentButtonUserOrderActivity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <com.example.bassam.khedmaapp.views.MyButton
+            android:id="@+id/orderNowButtonUserOrderActivity"
+            android:textSize="20dp"
+            android:text=" اطلب الآن"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/graybutton"
+            android:layout_weight="0.50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.example.bassam.khedmaapp.views.MyTextView
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="التكلفة التقديرية(أختياري) "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.bassam.khedmaapp.views.MyEditText
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextview"
+        android:gravity="right"
+        android:id="@+id/costEditTextNewUserRegistrationActivity"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.example.bassam.khedmaapp.views.MyTextView
+
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="وصف المشكلة (أختياري) "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.bassam.khedmaapp.views.MyEditText
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittextview"
+        android:gravity="right"
+        android:id="@+id/descriptionEditTextNewUserRegistrationActivity"
+        android:textSize="20dp"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+        <com.example.bassam.khedmaapp.views.MyTextView
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:textSize="20dp"
+            android:text=" ارفق الصورة (أختياري) "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:id="@+id/problemImageUserOrderActivity"
+        android:src="@drawable/image_icon"
+        android:background="@drawable/imageview"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

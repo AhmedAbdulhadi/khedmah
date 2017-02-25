@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_supplier_profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bassam.khedmaapp.user.activitys.SupplierProfileInUserActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/container_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/back_toolbar_layout"/>
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <ImageView
+
+                android:id="@+id/supplierPhotoImageViewInSupplierProfileInUserActivity"
+                android:src="@drawable/user_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/supplierNameTextViewInSupplierProfileInUserActivity"
+                android:gravity="center"
+                android:textSize="35dp"
+                android:text="اسم الحرفي"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="مزود جديد"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:isIndicator="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/supplierRateRateViewInSupplierProfileInUserActivity"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:clickable="false"
+                android:contextClickable="false" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:layout_marginTop="0dp"
+                android:textSize="20dp"
+                android:text="العنوان"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"/>
+
+            <com.example.bassam.khedmaapp.views.MytoolbarTextView
+                android:id="@+id/supplierAddressTextViewInSupplierProfileInUserActivity"
+                android:layout_marginTop="10dp"
+                android:text="الخبر - السعودية"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.bassam.khedmaapp.views.MyTextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="الخدمات التي يقدمها"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.bassam.khedmaapp.views.MyTextView
+                    android:id="@+id/secondServicesSupplierIsSupportInSupplierProfileInUserActivity"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/btn_default"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="الخدمات"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <com.example.bassam.khedmaapp.views.MyTextView
+                    android:id="@+id/firstServicesSupplierIsSupportInSupplierProfileInUserActivity"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/btn_default"
+                    android:textSize="20dp"
+                    android:text="الخدمات"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.bassam.khedmaapp.views.MyTextView
+                    android:id="@+id/fourthServicesSupplierIsSupportInSupplierProfileInUserActivity"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/btn_default"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="الخدمات"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <com.example.bassam.khedmaapp.views.MyTextView
+                    android:id="@+id/thirdServicesSupplierIsSupportInSupplierProfileInUserActivity"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/btn_default"
+                    android:textSize="20dp"
+                    android:text="الخدمات"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.example.bassam.khedmaapp.views.MyTextView
+                    android:id="@+id/sixthServicesSupplierIsSupportInSupplierProfileInUserActivity"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/btn_default"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:text="الخدمات"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <com.example.bassam.khedmaapp.views.MyTextView
+                    android:id="@+id/fifthServicesSupplierIsSupportInSupplierProfileInUserActivity"
+                    android:gravity="center"
+                    android:layout_weight="0.5"
+                    android:background="@android:drawable/btn_default"
+                    android:textSize="20dp"
+                    android:text="الخدمات"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <com.example.bassam.khedmaapp.views.MyButton
+                android:elevation="10dp"
+                android:id="@+id/AcceptServiceButtonSupplierProfileInUserActivity"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:background="@drawable/graybutton"
+                android:text="اعتمد الخدمة"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
